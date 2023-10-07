@@ -1,0 +1,163 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="tenure">tenure:</label>
+        <input type="text" id="tenure" name="tenure" placeholder="Enter tenure value (int)">
+    </div>
+
+    <div class="form-group">
+        <label for="SeniorCitizen">SeniorCitizen:</label>
+        <input type="SeniorCitizen" id="SeniorCitizen" name="SeniorCitizen" placeholder="SeniorCitizen:Enter 1 and if not Enter 0">
+    </div>
+    
+
+    <div class="form-group">
+        <label for="MonthlyCharges">MonthlyCharges:</label>
+        <input type="MonthlyCharges" id="MonthlyCharges" name="MonthlyCharges" placeholder="Enter MonthlyCharges value (int)">
+    </div>
+
+    <div class="form-group">
+        <label for="TotalCharges">TotalCharges:</label>
+        <input type="TotalCharges" id="TotalCharges" name="TotalCharges" placeholder="Enter TotalCharges value (int)">
+    </div>
+
+    
+
+    <div class="form-group">
+        <label for="gender">gender:</label>
+        <select id="gender" name="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option> 
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="Partner">Partner:</label>
+        <select id="Partner" name="Partner">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="Dependents">Dependents:</label>
+        <select id="Dependents" name="Dependents">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="PhoneService">PhoneService:</label>
+        <select id="PhoneService" name="PhoneService">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="MultipleLines">MultipleLines:</label>
+        <select id="MultipleLines" name="MultipleLines">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+          <option value="No phone service">No phone service</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="InternetService">InternetService:</label>
+        <select id="InternetService" name="InternetService">
+          <option value="Fiber optic">Fiber optic</option>
+          <option value="DSL">DSL</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="OnlineSecurity">OnlineSecurity:</label>
+        <select id="OnlineSecurity" name="OnlineSecurity">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="OnlineBackup">OnlineBackup:</label>
+        <select id="OnlineBackup" name="OnlineBackup">
+          <option value="No internet service">No internet service</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="DeviceProtection">DeviceProtection:</label>
+        <select id="DeviceProtection" name="DeviceProtection">
+          <option value="No internet service">No internet service</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="TechSupport">TechSupport:</label>
+        <select id="TechSupport" name="TechSupport">
+          <option value="No internet service">No internet service</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="StreamingTV">StreamingTV:</label>
+        <select id="StreamingTV" name="StreamingTV">
+          <option value="No internet service">No internet service</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="StreamingMovies">StreamingMovies:</label>
+        <select id="StreamingMovies" name="StreamingMovies">
+          <option value="No internet service">No internet service</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="Contract">Contract:</label>
+        <select id="Contract" name="Contract">
+          <option value="Month-to-month">Month-to-month</option>
+          <option value="Two year">Two year</option>
+          <option value="One year">One year</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="PaperlessBilling">PaperlessBilling:</label>
+        <select id="PaperlessBilling" name="PaperlessBilling">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="PaymentMethod">PaymentMethod:</label>
+        <select id="PaymentMethod" name="PaymentMethod">
+          <option value="Electronic check">Electronic check</option>
+          <option value="Mailed check">Mailed check</option>
+          <option value="Bank transfer (automatic)">Bank transfer (automatic)</option>
+          <option value="Credit card (automatic)">Credit card (automatic)</option>
+        </select>
+      </div>
+
+      
+    
+    <div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
